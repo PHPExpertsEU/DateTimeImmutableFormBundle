@@ -2,7 +2,7 @@
   "name": "phpexpertseu/datetimeimmutable-form-bundle",
   "autoload": {
     "psr-4": {
-      "PHPExpertsEU\\DateTimeImmutableFormBundle": ""
+      "PHPExpertsEU\\DateTimeImmutableFormBundle\\": ""
     }
   },
   "authors": [

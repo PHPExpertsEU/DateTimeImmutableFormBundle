@@ -5,7 +5,7 @@ The purpose of **DateTimeImmutableFormBundle**  bundle is to replace mutable Dat
 Requirements
 =============================
 * PHP >= 5.5 since [DateTimeImmutable](http://php.net/manual/en/class.datetimeimmutable.php)  isn't supported in earlier versions
-* Symfony Framework => 2.1
+* Symfony Framework >= 2.1
 
 Installation
 =============================
