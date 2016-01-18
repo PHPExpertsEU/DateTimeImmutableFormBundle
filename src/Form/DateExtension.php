@@ -9,7 +9,7 @@
 namespace PHPExpertsEU\DateTimeImmutableFormBundle\Form;
 
 
-use PHPExpertsEU\DateTimeImmutableFormBundle\DataTransformer\DateTimeTransformer;
+use PHPExpertsEU\DateTimeImmutableFormBundle\DataTransformer\DateTimeImmutableToMutableTransformer;
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\FormBuilderInterface;
 
@@ -19,7 +19,7 @@ class DateExtension extends AbstractTypeExtension
     {
         parent::buildForm($builder, $options);
 
-        $builder->addModelTransformer(new DateTimeTransformer(), true);
+        $builder->addModelTransformer(new DateTimeImmutableToMutableTransformer(), true);
     }
 
 
