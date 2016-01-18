@@ -1,7 +1,7 @@
 Step 1: Add DateTimeImmutableFormBundle to your project
 =============================
 ```bash
-composer require hwi/oauth-bundle
+composer require phpexpertseu/datetimeimmutable-form-bundle
 ```
 
 Step 2: Enable the bundle
