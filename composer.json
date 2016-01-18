@@ -1,5 +1,7 @@
 {
   "name": "phpexpertseu/datetimeimmutable-form-bundle",
+  "license": "MIT",
+  "description": "This bundle for Symfony2 replaces the DateTime with DateTimeImmutable classes in forms",
   "autoload": {
     "psr-4": {
       "PHPExpertsEU\\DateTimeImmutableFormBundle\\": ""
