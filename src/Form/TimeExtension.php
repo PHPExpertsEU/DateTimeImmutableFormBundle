@@ -6,7 +6,7 @@
  * Time: 7:50 PM
  */
 
-namespace PHPExpertsEU\DateTimeImmutableFormBundle\Form\Extension;
+namespace PHPExpertsEU\DateTimeImmutableFormBundle\Form;
 
 
 use PHPExpertsEU\DateTimeImmutableFormBundle\DataTransformer\DateTimeTransformer;
