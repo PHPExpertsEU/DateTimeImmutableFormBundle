@@ -1,0 +1,24 @@
+{
+  "name": "phpexpertseu/datetimeimmutable-form-bundle",
+  "autoload": {
+    "psr-4": {
+      "PHPExpertsEU\\DateTimeImmutableFormBundle": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "Zsolt Rácz",
+      "email": "racz@phpexperts.eu"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "symfony/framework-bundle": "~2.1|~3.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/PHPExpertsEU/DateTimeImmutableFormBundle.git"
+    }
+  ]
+}

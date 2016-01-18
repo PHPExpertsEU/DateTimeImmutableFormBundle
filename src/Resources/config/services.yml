@@ -1,0 +1,16 @@
+services:
+#Forms extensions
+  app.form.datetime_immutable:
+    class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\Extension\DateTimeExtension
+    tags:
+        - { name: form.type_extension, alias: datetime }
+
+  app.form.date_immutable:
+    class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\Extension\DateExtension
+    tags:
+        - { name: form.type_extension, alias: date }
+
+  app.form.time_immutable:
+    class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\Extension\TimeExtension
+    tags:
+        - { name: form.type_extension, alias: time }
