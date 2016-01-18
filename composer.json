@@ -4,7 +4,7 @@
   "description": "This bundle for Symfony2 replaces the mutable DateTime classes with DateTimeImmutable in forms",
   "autoload": {
     "psr-4": {
-      "PHPExpertsEU\\DateTimeImmutableFormBundle\\": ""
+      "PHPExpertsEU\\DateTimeImmutableFormBundle\\": "src"
     }
   },
   "authors": [
