@@ -24,7 +24,10 @@ class DateTimeImmutableToMutableTransformer implements DataTransformerInterface
             throw new TransformationFailedException("Expected an instance of: DateTimeInterface, " . get_class($value) . " given.");
         }
 
-        return \DateTime::createFromFormat("U", $value->getTimestamp(), $value->getTimezone());
+        $result = \DateTime::createFromFormat("U", $value->getTimestamp());
+        $result->setTimezone($value->getTimezone());
+
+        return $result;
     }
 
     public function reverseTransform($value)
@@ -41,7 +44,10 @@ class DateTimeImmutableToMutableTransformer implements DataTransformerInterface
             throw new TransformationFailedException("Expected an instance of: DateTime, " . get_class($value) . " given.");
         }
 
-        return \DateTimeImmutable::createFromFormat("U", $value->getTimestamp(), $value->getTimezone());
+        $result = \DateTimeImmutable::createFromFormat("U", $value->getTimestamp());
+        $result = $result->setTimezone($value->getTimezone());
+
+        return $result;
     }
 
 }
