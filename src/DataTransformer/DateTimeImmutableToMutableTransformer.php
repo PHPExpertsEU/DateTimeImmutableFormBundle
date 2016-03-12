@@ -24,7 +24,8 @@ class DateTimeImmutableToMutableTransformer implements DataTransformerInterface
             throw new TransformationFailedException("Expected an instance of: DateTimeInterface, " . get_class($value) . " given.");
         }
 
-        $result = \DateTime::createFromFormat("U", $value->getTimestamp());
+        $result = new \DateTime();
+        $result->setTimestamp($value->getTimestamp());
         $result->setTimezone($value->getTimezone());
 
         return $result;
@@ -44,7 +45,8 @@ class DateTimeImmutableToMutableTransformer implements DataTransformerInterface
             throw new TransformationFailedException("Expected an instance of: DateTime, " . get_class($value) . " given.");
         }
 
-        $result = \DateTimeImmutable::createFromFormat("U", $value->getTimestamp());
+        $result = new \DateTimeImmutable();
+        $result = $result->setTimestamp($value->getTimestamp());
         $result = $result->setTimezone($value->getTimezone());
 
         return $result;
