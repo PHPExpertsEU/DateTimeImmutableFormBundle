@@ -3,14 +3,14 @@ services:
   app.form.datetime_immutable:
     class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\DateTimeExtension
     tags:
-        - { name: form.type_extension, alias: datetime }
+        - { name: form.type_extension, alias: datetime, extended_type: Symfony\Component\Form\Extension\Core\Type\DateTimeType }
 
   app.form.date_immutable:
     class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\DateExtension
     tags:
-        - { name: form.type_extension, alias: date }
+        - { name: form.type_extension, alias: date, extended_type: Symfony\Component\Form\Extension\Core\Type\DateType }
 
   app.form.time_immutable:
     class: PHPExpertsEU\DateTimeImmutableFormBundle\Form\TimeExtension
     tags:
-        - { name: form.type_extension, alias: time }
+        - { name: form.type_extension, alias: time, extended_type: Symfony\Component\Form\Extension\Core\Type\TimeType }

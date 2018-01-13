@@ -11,6 +11,7 @@ namespace PHPExpertsEU\DateTimeImmutableFormBundle\Form;
 
 use PHPExpertsEU\DateTimeImmutableFormBundle\DataTransformer\DateTimeImmutableToMutableTransformer;
 use Symfony\Component\Form\AbstractTypeExtension;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class DateExtension extends AbstractTypeExtension
@@ -30,7 +31,7 @@ class DateExtension extends AbstractTypeExtension
      */
     public function getExtendedType()
     {
-        return "date";
+        return DateType::class;
     }
 
 }
