@@ -10,12 +10,12 @@
   "authors": [
     {
       "name": "Zsolt Rácz",
-      "email": "racz@phpexperts.eu"
+      "email": "zsoltracz@zsoltracz.com"
     }
   ],
   "require": {
     "php": ">=5.5",
-    "symfony/framework-bundle": "~2.1|~3.0"
+    "symfony/framework-bundle": "~2.1"
   },
   "repositories": [
     {
