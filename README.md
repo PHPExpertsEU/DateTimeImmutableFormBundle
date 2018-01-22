@@ -9,4 +9,4 @@ Requirements
 
 Installation
 =============================
-You can find the installation instructions [here](https://github.com/PHPExpertsEU/DateTimeImmutableFormBundle/blob/master/src/Resources/doc/installation.md).
+You can find the installation instructions [here](src/Resources/doc/installation.md).
